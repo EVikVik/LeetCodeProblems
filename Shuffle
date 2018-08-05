@@ -1,0 +1,13 @@
+import random
+
+def shuffle(in_list):
+    for i, song in enumerate(in_list):
+        i_rand = random.randint(0, len(in_list)-1)
+        in_list[i] = in_list[i_rand]
+        in_list[i_rand] = song
+
+test = [1, 2, 4, 3, 4, 5]
+
+print(test)
+shuffle(test)
+print(test)
